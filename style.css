@@ -70,10 +70,25 @@ span{
     display: none;
 }
 /* for image edit */
-img{
+#home-image{
     width: 500px;
     height: 500px;
     border-radius: 100%;
+    border: 2px solid var(--main-color);
+    animation: home-image 1s ease-in-out infinite alternate;
+}
+
+/* annimation */
+@keyframes home-image{
+    0%{
+        transform: translateY(10px);
+        border: 2px solid var(--main-color);
+    }
+    100%{
+        transform: translateY(-10px);
+        border: 3px solid var(--text-color);
+    }
+
 }
 .home{
     padding: 120px 14%;  
@@ -144,9 +159,72 @@ img{
 
 
 /* about styling */
-.about{
-    color: var(--text-color);
-    text-align: center;
-    padding-top: 120px;
-
+.about-img{
+    width: 350px;
+    height: 400px;
+    background-color: aqua;
 }
+.about p{
+    padding: 28px 14%;
+    font-size: var(--p-font);
+    font-weight: 500;
+}
+.about{
+    padding: 28px 14%;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 6rem;
+    align-items: center;
+}
+.about-head{
+    width: 100%;
+    margin-top: 80px;
+   text-align: center;
+}
+
+.desc{
+    padding: 20px 14%;
+    font-weight: 300;
+
+    font-size: var(--p-font);
+    font-weight: 300;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--2nd-main-color);
+}
+
+.contactme-btn{
+    text-align: center;
+    padding-bottom: 20px;
+}
+#about-image{
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+
+
+
+/* contact desigining  */
+.form-section{
+    width: 500px;
+    height: 500px;
+    background-color: #2fbf71;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -250px;
+    text-align: center;
+}
+
+.name{
+    padding-top: 120px;
+    padding-bottom: 5px;
+}
+
+
