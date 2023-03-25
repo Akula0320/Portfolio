@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+:root{
+    --bg-color: #10101a;
+    --main-color: #2fbf71;
+    --2nd-main-color: #ffffffcc;
+    --text-color: #fff;
+    --big-font: 5rem;
+    --h2-font: 1.9rem;
+    --p-font: 1rem;
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color);
+    padding: 24px 14%;
+    transition: .4s;
+}
+.logo{
+    color: var(--text-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+span{
+    color: var(--main-color);
+}
+
+.nav{
+    display: flex;
+}
+.nav a{
+    color: var(--text-color);
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav a:hover{
+    background: var(--main-color);
+    border-radius: 4px;
+    transition: .4s;
+}
+
+#menu-icon{
+    font-size: 28px;
+    z-index: 10001;
+    background-color: var(--bg-color);
+    cursor: pointer;
+    display: none;
+}
+/* for image edit */
+img{
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+}
+.home{
+    padding: 120px 14%;  
+
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 6rem;
+    align-items: center;
+}
+
+.home-img img{
+    max-width: 100%;
+    width: 600px;
+    height: auto; 
+}
+
+.home-text h5{
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0 0 20px;
+}
+.home-text h1{
+    color: var(--text-color);
+    font-size: var(--big-font);
+    font-weight: 700;
+    line-height: 1;
+    margin: 0 0 20px;
+}
+
+.home-text h6{
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.home-text p{
+    max-width: 470px;
+    font-size: var(--p-font);
+    font-weight: 300;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--2nd-main-color);
+}
+
+.btn{
+    background-color: var(--main-color);
+    box-shadow: 4px 4px var(--text-color);
+    line-height: 42px;
+    padding: 0 25px;
+    display: inline-block;
+    border: 1px solid transparent;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: ease all 0.35s;
+}
+
+.btn:hover{
+    color: var(--main-color);
+    background-color: var(--text-color);
+    box-shadow: 4px 4px var(--main-color);
+}   
+
+
+/* about styling */
+.about{
+    color: var(--text-color);
+    text-align: center;
+    padding-top: 120px;
+
+}
